@@ -25,6 +25,7 @@ function SendEmail($attachmentpath, $StoreName)
 
     "
     $Message.To.Add("info@achyutlabs.com.au")
+    $Message.To.Add("kahan.ladani@achyutlabs.com")
     $Message.Attachments.Add("$attachmentpath")
     $smtp.Send($Message)
 }
